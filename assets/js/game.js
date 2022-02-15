@@ -103,15 +103,11 @@ else {
     break;
 }
 }
-//play again
-startGame(); 
-
 //after the loop ends, player is either out of health or enemies to fight, so run the end game function
 endGame();
 };
 
-//start the game when the page loads
-startGame();
+
 
 //function to end the entire game
 var endGame = function() {
@@ -130,7 +126,7 @@ if (playAgainConfirm) {
     startGame();
 }
 else {
-    window.alert("Thank you for playing Robot Gladiators! COme back soon!")
+    window.alert("Thank you for playing Robot Gladiators! Come back soon!")
 
 }
 
@@ -139,7 +135,7 @@ else {
 
 var shop = function() {
     //ask player what they'd like to do
-    var shopOptionPrompt = windoe.prompt(
+    var shopOptionPrompt = window.prompt(
         "Would you like to REFILL your health, UPGRADE your attack, or LEAVE the store? Please enter one: 'REFILL', 'UPGRSDE', or 'LEAVE' to make a choice."
     
     );
@@ -186,3 +182,5 @@ var shop = function() {
     }
 };
 
+//start the game when the page loads
+startGame();
